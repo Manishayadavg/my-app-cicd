@@ -22,7 +22,7 @@ node{
    sh "docker tag saidamo/myweb:0.0.2 13.233.83.129:8083/damo:1.0.0"
    sh 'docker push 13.233.83.129:8083/damo:1.0.0'
    }
-    stage('Remove Previous Container'){
+    stage('Remove Previous Containers'){
 	try{
 		sh 'docker rm -f tomcattest'
 	}catch(error){
